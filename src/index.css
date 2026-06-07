@@ -150,20 +150,6 @@
   box-shadow: 0 20px 60px rgba(0,0,0,0.6) !important;
 }
 
-/* Fix mobile portal overlay */
-.react-datepicker__portal {
-  background-color: rgba(10, 15, 29, 0.8) !important;
-  backdrop-filter: blur(8px) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 9999 !important;
-}
-
-.react-datepicker__portal .react-datepicker {
-  transform: scale(1.1);
-}
-
 .react-datepicker__header {
   background-color: rgba(6, 182, 212, 0.08) !important;
   border-bottom: 1px solid rgba(255,255,255,0.08) !important;
