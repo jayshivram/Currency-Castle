@@ -73,7 +73,7 @@ export default function Chart({ data, base, target, loading }) {
       </div>
 
       {/* Stats row */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex gap-1.5 sm:gap-3 mb-4">
         {[
           { label: 'Min', value: minVal, color: '#f87171' },
           { label: 'Avg', value: avgVal, color: '#06b6d4' },
@@ -81,11 +81,11 @@ export default function Chart({ data, base, target, loading }) {
         ].map(({ label, value, color }) => (
           <div
             key={label}
-            className="flex-1 rounded-lg px-3 py-2 text-center"
+            className="flex-1 rounded-lg px-1.5 py-1.5 sm:px-3 sm:py-2 text-center"
             style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}
           >
-            <div className="text-xs text-slate-500 mb-0.5">{label}</div>
-            <div className="text-sm font-bold font-mono" style={{ color }}>
+            <div className="text-[10px] sm:text-xs text-slate-500 mb-0.5">{label}</div>
+            <div className="text-xs sm:text-sm font-bold font-mono" style={{ color }}>
               {value.toFixed(decimals)}
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Chart({ data, base, target, loading }) {
             tickLine={false}
             axisLine={false}
             domain={['auto', 'auto']}
-            width={60}
+            width={35}
             tickFormatter={v => v.toFixed(decimals === 2 ? 1 : 2)}
           />
           <Tooltip content={<CustomTooltip target={target} />} />

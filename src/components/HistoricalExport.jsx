@@ -112,7 +112,7 @@ export default function HistoricalExport({ base, target }) {
 
   return (
     <div
-      className="glass glass-hover rounded-2xl p-6"
+      className="glass glass-hover rounded-2xl p-4 sm:p-6"
       style={{ border: '1px solid rgba(255,255,255,0.08)' }}
     >
       {/* Header */}
@@ -221,7 +221,7 @@ export default function HistoricalExport({ base, target }) {
 
       {/* Chart Area */}
       <div
-        className="rounded-xl p-4"
+        className="rounded-xl p-2 sm:p-4"
         style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}
       >
         <Chart
