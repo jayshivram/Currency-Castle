@@ -140,6 +140,13 @@
   color: #e2e8f0 !important;
 }
 
+/* Remove ugly white outline on mobile tap */
+.recharts-wrapper,
+.recharts-surface {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 /* React DatePicker overrides */
 .react-datepicker {
   background-color: #0d1a3a !important;

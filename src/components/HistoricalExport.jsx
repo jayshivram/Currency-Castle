@@ -155,6 +155,7 @@ export default function HistoricalExport({ base, target }) {
             dateFormat="yyyy-MM-dd"
             isClearable
             showPopperArrow={false}
+            customInput={<input inputMode="none" />}
           />
         </div>
 
