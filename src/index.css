@@ -141,7 +141,10 @@
 }
 
 /* Remove ugly white outline on mobile tap */
+.recharts-responsive-container,
+.recharts-responsive-container *,
 .recharts-wrapper,
+.recharts-wrapper *,
 .recharts-surface {
   outline: none !important;
   -webkit-tap-highlight-color: transparent !important;
